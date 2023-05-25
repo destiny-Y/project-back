@@ -38,16 +38,17 @@ module.exports = {
     },
     // before: require('./mock/mock-server.js')
     proxy: {
-      /* '/dev-api':{
-        target:"http://39.98.123.211:8170",
-        pathRewrite:{'^/dev-api':''},
-      }, */
+      // '/dev-api': {
+      //   target: 'http://gmall-h5-api.atguigu.cn',
+      //   pathRewrite: { '^/dev-api': '' },
+      // },
       '/dev-api': {
         target: 'http://39.98.123.211:8170',
         pathRewrite: { '^/dev-api': '' },
       },
       '/dev1-api': {
-        target: 'http://39.98.123.211:8510',
+        // target: 'http://39.98.123.211:8510',
+        target: 'http://gmall-h5-api.atguigu.cn',
         pathRewrite: { '^/dev1-api': '' },
       },
     },

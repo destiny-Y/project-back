@@ -1,13 +1,14 @@
 import request from '@/utils/request'
 
-const api_name = '/admin/acl/user'
+// const api_name = '/admin/acl/user'
+const api_name = '/dev1-api/admin/acl/user'
 
 /*
 登陆
 */
 export function login({ username, password }) {
   return request({
-    url: '/admin/acl/index/login',
+    url: '/dev1-api/admin/acl/index/login',
     method: 'post',
     data: { username, password }
   })
@@ -18,7 +19,7 @@ export function login({ username, password }) {
 */
 export function getInfo() {
   return request({
-    url: '/admin/acl/index/info',
+    url: '/dev1-api/admin/acl/index/info',
     method: 'get'
   })
 }
@@ -28,7 +29,7 @@ export function getInfo() {
 */
 export function logout() {
   return request({
-    url: '/admin/acl/index/logout',
+    url: '/dev1-api/admin/acl/index/logout',
     method: 'post'
   })
 }
@@ -37,7 +38,7 @@ export function logout() {
 获取当前用户的菜单权限列表
 */
 export function getMenu() {
-  return request('/admin/acl/index/menu')
+  return request('/dev1-api/admin/acl/index/menu')
 }
 
 

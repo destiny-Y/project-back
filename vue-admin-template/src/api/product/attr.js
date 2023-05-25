@@ -1,7 +1,7 @@
 // 平台属性管理模块的接口文件
 import request from '@/utils/request';
 
-// 获取一级分类的接口
+// 获取一级分类的接口 
 // /admin/product/getCategory1 GET
 export const reqCategory1List = () => {
   return request({

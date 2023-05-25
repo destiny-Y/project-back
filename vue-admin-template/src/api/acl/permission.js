@@ -3,7 +3,8 @@ import request from '@/utils/request'
 /* 
 权限管理相关的API请求函数
 */
-const api_name = '/admin/acl/permission'
+// const api_name = '/admin/acl/permission'
+const api_name = '/dev1-api/admin/acl/permission'
 
 export default {
   
